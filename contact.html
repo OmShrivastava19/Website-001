@@ -386,6 +386,8 @@
       var image = document.createElement('img')
       image.setAttribute('src', profile.getImageUrl())
       element.append(image)
+
+      prompt("Thanks For SignIn to my Website "+ profile.getName())
   }
 
   function signOut() {
