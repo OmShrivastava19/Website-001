@@ -6,18 +6,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="google-signin-client_id" content="501545583553-tst0n4n100ea117nk130b4u1h8t3gu66.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
   <!-- Google Captcha-->  
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-      function onSubmit(token) {
-        document.getElementById("contact-form").submit();
-      }
-      document.getElementById("contact-form").reset();
-    </script>
+  
 
   
   
@@ -26,7 +22,7 @@
     
     
     * {
-      font-family: cursive;
+      font-family: Arial, Helvetica, sans-serif;
       font-weight: bold;
     }
 
@@ -111,6 +107,12 @@
         margin-top: 23px;
     }
 
+    .g-signin2 {
+      padding-top: 12px;
+      padding-right: 15px;
+      padding-bottom: 12px;
+      padding-left: 0px;
+    }
   </style>
 
   <title>Contact Me
@@ -188,13 +190,17 @@
                             name="password">
 
                     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                    <a href="#" onclick="signOut();">Sign out</a>
+                    <input type="hidden" name=" " value="contact.html">
+
+                    <button type="submit" class="btn btn-danger mt-2" id="loginsubmit">Login</button>
+                </form>
 
                     </div>
-                    <form id='contact-form' action="?" method="POST">
+              <!--    <form id='contact-form' action="?" method="POST">
                       <button class="g-recaptcha" data-sitekey="6Le6TaMZAAAAAH2asuR5ta8crMFnFfDKBuXoJOR3" data-callback='onSubmit'>Submit</button>
                       <br/>
                     </form>
+                  -->
                 </form>
             </div>
 
@@ -245,12 +251,14 @@
                 </div>
 
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                    <a href="#" onclick="signOut();">Sign out</a>
-
+                <input type="hidden" name="path" value="/">
+                <button type="submit" class="btn btn-danger mt-2">SignUp</button>
+              <!--
                 <form id='contact-form' action="?" method="POST">
                   <button class="g-recaptcha" data-sitekey="6Le6TaMZAAAAAH2asuR5ta8crMFnFfDKBuXoJOR3" data-callback='onSubmit'>Submit</button>
                   <br/>
                 </form>
+              -->
             </form>
         </div>
 
@@ -286,13 +294,12 @@
                         <textarea type="text" class="form-control" id="message" placeholder="Your message" name="message"></textarea>
                     </div>
                     
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
                     <form id='contact-form' action="?" method="POST">
                       <button class="g-recaptcha" data-sitekey="6Le6TaMZAAAAAH2asuR5ta8crMFnFfDKBuXoJOR3" data-callback='onSubmit'>Submit</button>
                       <br/>
                     </form>
-
-                    <a href="#" onclick="onSignIn();"><div class="g-signin2" data-onsuccess="onSignIn">Sign In</div></a>
-                    <a href="#" onclick="signOut();">Sign out</a>
                     
                 </form>
             
@@ -338,10 +345,10 @@
         </a><p class="float-center"><a href="#">Back To Top</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p></p>
     </center>    
   </footer>
+
   <!-- Custom JavaScript -->
   <script src="/static/common/js/base.js"></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-
+  
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -354,24 +361,18 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
-    <script>
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  }
-</script>
-    <script>
-    function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-    console.log('Name: ' + profile.getName());
-    console.log('Image URL: ' + profile.getImageUrl());
-    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-    }
-</script>
   
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
 </body>
 </html>

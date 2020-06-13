@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Auth</title>
+        <meta name="google-signin-client_id" content="501545583553-tst0n4n100ea117nk130b4u1h8t3gu66.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </head>
+    <body>
+        <h2>Om Shrivastava's Sign In Page</h2>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div id="content"></div>
+        <button onclick="signOut()">Sign Out</button>
+    </body>
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile()
+            console.log('User is' + JSON.stringify(profile))
+
+            var element = document.querySelector('#content')
+            element.innerText = profile.getName();
+
+            var image = document.createElement('img')
+            image.setAttribute('src', profile.getImageUrl())
+            element.append(image)
+        }
+
+        function signOut() {
+            gapi.auth2.getAuthInstance().signOut().then(function() {
+                console.log('User Sign Out')
+            })
+        }
+    </script>
+</html>
