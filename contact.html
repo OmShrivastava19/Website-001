@@ -380,14 +380,14 @@
       var profile = googleUser.getBasicProfile()
       console.log('User is' + JSON.stringify(profile))
 
-      var element = document.querySelector('#loginModel')
+      var element = document.querySelector('#content')
       element.innerText = profile.getName();
 
       var image = document.createElement('img')
       image.setAttribute('src', profile.getImageUrl())
       element.append(image)
 
-      prompt("Thanks For SignIn to my Website "+ profile.getName())
+      alert("Thanks For SignIn to my Website "+ profile.getName())
   }
 
   function signOut() {
