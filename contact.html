@@ -374,5 +374,25 @@
   <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+
+<script>
+  function onSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile()
+      console.log('User is' + JSON.stringify(profile))
+
+      var element = document.querySelector('#content')
+      element.innerText = profile.getName();
+
+      var image = document.createElement('img')
+      image.setAttribute('src', profile.getImageUrl())
+      element.append(image)
+  }
+
+  function signOut() {
+      gapi.auth2.getAuthInstance().signOut().then(function() {
+          console.log('User Sign Out')
+      })
+  }
+</script>
 </body>
 </html>
