@@ -1,6 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -134,6 +135,10 @@ p.type1 {
 	}
   }
 
+/* For Title*/
+#main-heading {
+	font-family: 'MuseoModerno', cursive;
+}  
 h1 { 
 	font-family: Cambria; font-size: 26px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 28.6px; 
 } 
@@ -173,6 +178,18 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+/* Scroll Bars*/
+::-webkit-scrollbar {
+	width: 12px;
+}
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(transparent, #e44c65);
+	border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(transparent, #00c6ff);
+	
 }
 
 /* Basic */
