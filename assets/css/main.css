@@ -52,11 +52,12 @@ body {
 }
 
 p.type1 {
-	border-right: solid 5px rgba(255,255,255,.75);
+	border-right: solid 4px rgba(255,255,255,.75);
+	text-align: right;
 	white-space: nowrap;
 	overflow: hidden;    
 	font-family: 'Source Code Pro', monospace;  
-	font-size: 17px;
+	font-size: 16px;
 	color: rgba(255,255,255,.70);
   }
   
@@ -81,7 +82,7 @@ p.type1 {
   }
 /* Second Animation */
   .output {
-	text-align:center;
+	text-align:right;
 	font-family: 'Source Code Pro', monospace;
 	color:white;
 	
@@ -181,14 +182,14 @@ input, select, textarea {
 }
 /* Scroll Bars*/
 ::-webkit-scrollbar {
-	width: 12px;
+	width: 22px;
 }
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(transparent, #e44c65);
+	background: linear-gradient(transparent, #00c6ff);
 	border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(transparent, #00c6ff);
+	background: linear-gradient(transparent, #e44c65);
 	
 }
 
@@ -4229,3 +4230,212 @@ input, select, textarea {
 					}
 
 	}
+/* Responsive For All Devices */
+/* For Tablets */
+
+@media only screen and (max-width: 768px) and (min-width: 426px){
+	*{
+		text-align: center;
+	}
+
+	h1 {
+		font-size: larger;
+		text-align: center;
+	}
+	h2 {
+		font-size: large;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		text-align: center;
+	}
+	p {
+		font-size: large;
+	}
+	p.type1 {
+		border-right: solid 4px rgba(255,255,255,.75);
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;    
+		font-family: 'Source Code Pro', monospace;  
+		font-size: 16px;
+		color: rgba(255,255,255,.70);
+	  }
+	  
+	 /*Animation*/
+	  p.type1 {
+		animation: animated-text 4s linear 1s 1 normal both,
+				   animated-cursor 600ms linear infinite;
+	  }
+	  
+	 /*text animation*/
+	  
+	  @keyframes animated-text{
+		from{width: 0;}
+		to{width: 412px;}
+	  }
+	  
+	  /*courser animation*/
+	  
+	  @keyframes animated-cursor{
+		from{border-right-color: rgba(255,255,255,.75);}
+		to{border-right-color: transparent;}
+	  }
+
+}	
+
+/* For Large Screen */
+
+
+
+
+/* For Mobile Large*/
+
+@media only screen and (max-width: 425px) and (min-width: 376px){
+	*{
+		text-align: center;
+	}
+
+	h1 {
+		font-size: larger;
+		text-align: center;
+	}
+	h2 {
+		font-size: large;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		text-align: center;
+	}
+	p {
+		font-size: large;
+	}
+	p.type1 {
+		border-right: solid 4px rgba(255,255,255,.75);
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;    
+		font-family: 'Source Code Pro', monospace;  
+		font-size: 14.5px;
+		color: rgba(255,255,255,.70);
+	  }
+	  
+	 /*Animation*/
+	  p.type1 {
+		animation: animated-text 4s linear 1s 1 normal both,
+				   animated-cursor 600ms linear infinite;
+	  }
+	  
+	 /*text animation*/
+	  
+	  @keyframes animated-text{
+		from{width: 0;}
+		to{width: 368px;}
+	  }
+	  
+	  /*courser animation*/
+	  
+	  @keyframes animated-cursor{
+		from{border-right-color: rgba(255,255,255,.75);}
+		to{border-right-color: transparent;}
+	  }
+
+}	
+
+/* For Mobile Medium */
+
+@media only screen and (max-width: 375px) and (min-width: 322px){
+	*{
+		text-align: center;
+	}
+
+	h1 {
+		font-size: large;
+		text-align: center;
+	}
+	h2 {
+		font-size: medium;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		text-align: center;
+	}
+	p {
+		font-size: medium;
+	}
+	p.type1 {
+		border-right: solid 4px rgba(255,255,255,.75);
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;    
+		font-family: 'Source Code Pro', monospace;  
+		font-size: 12px;
+		color: rgba(255,255,255,.70);
+	  }
+	  
+	 /*Animation*/
+	  p.type1 {
+		animation: animated-text 4s linear 1s 1 normal both,
+				   animated-cursor 600ms linear infinite;
+	  }
+	  
+	 /*text animation*/
+	  
+	  @keyframes animated-text{
+		from{width: 0;}
+		to{width: 312px;}
+	  }
+	  
+	  /*courser animation*/
+	  
+	  @keyframes animated-cursor{
+		from{border-right-color: rgba(255,255,255,.75);}
+		to{border-right-color: transparent;}
+	  }
+
+}	
+
+/* For Mobile Small */
+
+@media only screen and (max-width: 320px) {
+	*{
+		text-align: center;
+	}
+
+	h1 {
+		font-size: medium;
+		text-align: center;
+	}
+	h2 {
+		font-size: medium;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		text-align: center;
+	}
+	p {
+		font-size: medium;
+	}
+	p.type1 {
+		border-right: solid 4px rgba(255,255,255,.75);
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;    
+		font-family: 'Source Code Pro', monospace;  
+		font-size: 10px;
+		color: rgba(255,255,255,.70);
+	  }
+	  
+	 /*Animation*/
+	  p.type1 {
+		animation: animated-text 4s linear 1s 1 normal both,
+				   animated-cursor 600ms linear infinite;
+	  }
+	  
+	 /*text animation*/
+	  
+	  @keyframes animated-text{
+		from{width: 0;}
+		to{width: 256px;}
+	  }
+	  
+	  /*courser animation*/
+	  
+	  @keyframes animated-cursor{
+		from{border-right-color: rgba(255,255,255,.75);}
+		to{border-right-color: transparent;}
+	  }
+
+}
