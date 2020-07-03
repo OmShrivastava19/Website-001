@@ -1,6 +1,0 @@
-// Hello World In C Language
-#include <stdio.h>
-int main (void)
-{
-	printf("HELLO, WORLD");
-}
