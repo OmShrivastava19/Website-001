@@ -256,12 +256,7 @@ var textArray = [
 "I have learned Java!",
 "I have learned JavaScript!",
 "I have learned HTML!",
-// "What starts with an E, ends with an E and has one letter in it?|An Envelope",
-// "What has four wheels, and flies?|A Garbage truck",
-// "What do you call a pig that knows Karate?|Pork Chop",
-// "Why did the scarecrow get promoted?|He was out standing in his field.",
-// "I have a step ladder|I never knew my real ladder.",
-// "What kind of shoes do ninjas wear?|Sneakers"
+"I have learned AI!"
 ];
 
 // Speed (in milliseconds) of typing.

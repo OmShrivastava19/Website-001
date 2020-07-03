@@ -25,6 +25,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+* {
+	cursor: url('images/cursor.png'), auto;
+}	
+	
+
 body {
 	line-height: 1;
 }
