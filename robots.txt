@@ -1,0 +1,15 @@
+User-Agent: *
+Disallow:
+Allow: / 
+Allow: /blog
+Allow: /chat
+Allow: /code
+Allow: /languages
+Allow: /languages/c
+Allow: /languages/python
+Allow: /languages/java
+Allow: /languages/javascript
+Allow: /languages/html
+Allow: /videos
+
+Sitemap: https://omshrivastava.me/sitemap.xml
