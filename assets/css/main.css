@@ -806,6 +806,7 @@ input, select, textarea {
 
 		}
 
+		
 /* Row */
 
 	.row {
@@ -4236,7 +4237,59 @@ input, select, textarea {
 					}
 
 	}
+
 /* Responsive For All Devices */
+
+/* For Large Screen */
+@media only screen and (min-width: 1281px) {
+	h1 {
+		font-size: x-large;
+	}
+
+	h2.main-heading {
+		padding-left: 85px;
+	}
+	h2 {
+		font-size: x-large;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	}
+
+	p {
+		font-size: larger;
+	}
+	h1.cursor {
+		text-align: left;
+		padding-left: 75px;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	p.type1 {
+		border-right: solid 4px rgba(255,255,255,.75);
+		text-align: start;
+		white-space: nowrap;
+		overflow: hidden;    
+		font-family: 'Source Code Pro', monospace;  
+		font-size: 18px;
+		color: rgba(255,255,255,.70);
+	  }
+	p.typ1 {
+		text-align: start;
+	}
+	
+	p.typ2 {
+		text-align: start;
+		padding-left: 75px;
+	}
+
+	@keyframes animated-text{
+		from{width: 0;}
+		to{width: 456px;}
+	  }
+}
+	
 /* For Tablets */
 
 @media only screen and (max-width: 768px) and (min-width: 426px){
@@ -4287,11 +4340,6 @@ input, select, textarea {
 	  }
 
 }	
-
-/* For Large Screen */
-
-
-
 
 /* For Mobile Large*/
 
