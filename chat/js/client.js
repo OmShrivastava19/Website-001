@@ -29,9 +29,6 @@ form.addEventListener('submit', (e) =>{
 })
 
 const name = prompt("Enter your name to join the chat:");
-
-
-
 socket.emit('new-user-joined', name);
 
 socket.on ('user-joined', name =>{
